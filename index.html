@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<title>IS UNIVERSE | Tools & Careers</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/intro.css">
+</head>
+<body dir="rtl">
+<div class="shell">
+<header class="topbar">
+  <div class="brand"><div class="brand-mark">IS</div><div><strong>IS UNIVERSE</strong><small>TOOLS & CAREER PATHS</small></div></div>
+  <div class="top-actions"><button class="btn ghost" id="langBtn">EN / عربي</button><button class="btn" id="favoritesBtn">☆ <span data-i18n="favorites">المفضلة</span></button></div>
+</header>
+<section class="hero">
+  <div class="eyebrow">THE INFORMATION SYSTEMS EXPERIENCE</div>
+  <h1 data-i18n="heroTitle">اكتشف الأدوات. استكشف مستقبلك.</h1>
+  <p data-i18n="heroDesc">مساحتك التفاعلية لفهم أهم الأدوات التقنية والمسارات المهنية في عالم نظم المعلومات، من المهارات الأساسية حتى بناء مسارك الاحترافي.</p>
+  <div class="tagline">Learn the Tools. Explore the Careers. Build Your Future.</div>
+  <div class="stats"><div class="stat"><b>07</b><span data-i18n="toolsCount">أدوات تقنية</span></div><div class="stat"><b>07</b><span data-i18n="jobsCount">مسارات وظيفية</span></div><div class="stat"><b>14</b><span data-i18n="pathsCount">دليل تفاعلي</span></div></div>
+</section>
+<div class="tabs">
+  <button class="tab active" data-tab="tools" data-i18n="tools">الأدوات التقنية</button>
+  <button class="tab" data-tab="jobs" data-i18n="careers">المسميات الوظيفية</button>
+  <button class="tab" data-tab="skills" data-i18n="skillsTab">المهارات</button>
+</div>
+<div id="listing">
+  <div class="section-head"><div><h2 id="listTitle">الأدوات التقنية</h2><p id="listSubtitle">اكتشف الأدوات التي يستخدمها متخصصو نظم المعلومات</p></div><span class="chip" id="resultCount"></span></div>
+  <div class="toolbar">
+    <div class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن أداة أو وظيفة أو مهارة..."></div>
+    <select class="filter" id="categoryFilter" aria-label="التصنيف"></select>
+    <button class="btn" id="clearBtn">إعادة ضبط</button>
+  </div>
+  <div class="grid" id="cards"></div>
+  <div class="more-wrap" id="moreWrap"></div>
+</div>
+<div id="detailView" class="hidden"></div>
+<div id="compareBar" class="compare-bar hidden">
+  <div><span id="compareLabel">تم اختيار 0 عناصر للمقارنة</span><div class="compare-list" id="comparePills"></div></div>
+  <div><button class="btn primary" id="compareBtn">قارن الآن</button> <button class="btn ghost" id="clearCompare">مسح</button></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="footer">IS UNIVERSE · Learn the Tools. Explore the Careers. Build Your Future.</div>
+</div>
+<div class="modal-wrap" id="modalWrap"><div class="modal"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><h2 id="modalTitle">مقارنة</h2><button class="btn" id="closeModal">✕</button></div><div id="modalBody"></div></div></div>
+<div id="bht">اضغط مع الاستمرار للتسريع</div>
+<button id="sk">تخطي</button>
+<div id="wl" role="dialog" aria-label="Welcome"><div class="wl-in">
+<div class="w1" dir="ltr">UNIVERSITY OF AFRICA</div><div class="w1a">جامعة أفريقيا العالمية</div>
+<div class="w2" dir="ltr">COLLEGE OF COMPUTER SCIENCE</div><div class="w2a">كلية علوم الحاسوب</div>
+<h2 class="w3" dir="ltr">WELCOME TO <b>IS UNIVERSE</b></h2>
+<p class="w4"><b>مرحباً بك في عالم نظم المعلومات.</b><br>نرحب بك في رحلتك لاستكشاف عالم التكنولوجيا والابتكار والبيانات والأنظمة الذكية.</p>
+<div class="w5" dir="ltr">EXPLORE TECHNOLOGY.<br>DISCOVER INTELLIGENCE.<br>EXPERIENCE IS.</div>
+<button id="wgo" class="w6" dir="ltr">START EXPLORING<small>ابدأ رحلتك</small></button>
+</div><button id="wsk" class="wsk">تخطي</button></div>
+<button id="up" aria-label="العودة إلى الأعلى">↑</button>
+<script src="js/data.js"></script>
+<script src="js/skills.js"></script>
+<script src="js/app.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
